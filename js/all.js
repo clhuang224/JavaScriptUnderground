@@ -6,6 +6,14 @@ let data = [
         articleURL: 'https://clhuang224.github.io/TechBlog/2019/11/03/20191103-hex-jsunderground-01/',
         workURL: './01_MultiplicationChart/',
         codeURL: 'https://github.com/clhuang224/JavaScriptUnderground/tree/master/01_MultiplicationChart',
+    },
+    {
+        floor: 2,
+        tab: 'F2 時鐘',
+        title: 'F2 時鐘',
+        articleURL: 'https://clhuang224.github.io/TechBlog/2019/11/04/20191104-hex-jsunderground-02/',
+        workURL: './02_Clock/',
+        codeURL: 'https://github.com/clhuang224/JavaScriptUnderground/tree/master/02_Clock',
     }
 ];
 

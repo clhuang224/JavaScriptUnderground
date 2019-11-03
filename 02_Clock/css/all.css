@@ -1,0 +1,254 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-color: #293B29;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	width: 1280px;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* clock */
+
+.clock {
+	width: 350px;
+	height: 350px;
+	background-color: #3d5a45;
+	border-radius: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+/* 鐘面部分 */
+
+.clock .plate {
+	width: 310px;
+	height: 310px;
+	border: 3px solid #212f0b;
+	background-color: #293B29;
+	border-radius: 50%;
+	position: relative;
+}
+
+.clock .plate .dot {
+	width: 2px;
+	height: 2px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 31px;
+	left: 154px;
+	transform-origin: 1px 124px;
+}
+
+.clock .plate .line {
+	width: 1px;
+	height: 24px;
+	background-color: #ff7600;
+	position: absolute;
+	top: 20px;
+	left: 154.5px;
+	transform-origin: 0.5px 135px;
+	font-family: Helvetica, sans-serif;
+}
+
+.clock .plate .line .pm {
+	width: 12px;
+	height: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	font-size: 10px;
+	position: absolute;
+	transform-origin: 6px 6px;
+	left: -5.5px;
+	top: -14px;
+}
+
+.clock .plate .line .am {
+	width: 12px;
+	height: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	font-size: 10px;
+	position: absolute;
+	transform-origin: 6px 6px;
+	left: -5.5px;
+	bottom: -14px;
+}
+
+.clock .plate .star {
+	width: 8px;
+	height: 8px;
+	background-color: #ff7600;
+	clip-path: polygon(50% 0, 66% 33%, 100% 50%, 66% 66%, 50% 100%, 33% 66%, 0 50%, 33% 33%);
+	position: absolute;
+	top: 28px;
+	left: 151px;
+	transform-origin: 4px 127px;
+}
+
+/* 指針部分 */
+
+.clock .hour-hand {
+	width: 8px;
+	height: 72px;
+	background-color: #FFF;
+	border-radius: 0 0 4px 4px;
+	position: absolute;
+	left: 171px;
+	top: 107px;
+	transform-origin: 4px 68px;
+}
+
+.clock .hour-hand .dark {
+	background-color: #293B29;
+	width: 2px;
+	height: 24px;
+	margin: 3px;
+}
+
+.clock .minute-hand {
+	width: 8px;
+	height: 96px;
+	border-radius: 4px;
+	background-color: #ff7600;
+	position: absolute;
+	left: 171px;
+	top: 83px;
+	transform-origin: 4px 92px;
+	display: flex;
+	justify-content: center;
+	align-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.clock .minute-hand .line {
+	width: 1px;
+	height: 32px;
+	background-color: #FFF;
+}
+
+.clock .minute-hand .circle {
+	margin: 0px 2px 2px 2px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #FFF;
+}
+
+.clock .second-hand {
+	width: 14px;
+	height: 126px;
+	position: absolute;
+	left: 168px;
+	top: 50px;
+	transform-origin: 7px 125px;
+}
+
+.clock .second-hand .green-circle {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #b1ff00;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 3px;
+}
+
+.clock .second-hand .green-circle .black-circle {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	border: 1px solid #293b29;
+}
+
+.clock .second-hand .line {
+	width: 2px;
+	border-radius: 1px;
+	background-color: #b1ff00;
+	position: absolute;
+	left: 6px;
+	transform-origin: 1px 1px;
+}
+
+.clock .second-hand #line1 {
+	height: 41px;
+	top: 7px;
+	border-radius: 0px 0px 1px 1px;
+}
+
+.clock .second-hand #line2 {
+	height: 10px;
+	top: 47px;
+	transform: rotate(-45deg);
+}
+
+.clock .second-hand #line3 {
+	height: 20px;
+	top: 53px;
+	transform: translateX(6px) rotate(45deg);
+}
+
+.clock .second-hand #line4 {
+	height: 12px;
+	top: 66px;
+	transform: translateX(-7px) rotate(-45deg);
+}
+
+.clock .second-hand #line5 {
+	height: 53px;
+	top: 73px;
+	border-radius: 1px 1px 0px 0px;
+}
