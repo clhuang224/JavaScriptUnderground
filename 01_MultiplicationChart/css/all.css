@@ -128,10 +128,9 @@ body {
 
 .main .card .number {
     width: 120px;
-    height: 119px;
     font-weight: bold;
     font-size: 128px;
-    line-height: 128px;
+    line-height: 123px;
     text-shadow: 1.5px 1.5px #FFF,4px 3px #F0F0F0;
     display: flex;
     justify-content: center;
