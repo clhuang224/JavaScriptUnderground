@@ -34,7 +34,11 @@ let minuteHand = document.querySelector('.clock .minute-hand');
 let secondHand = document.querySelector('.clock .second-hand');
 setInterval(function () {
     let currentTime = new Date();
-    hourHand.style.transform = `rotate(${(currentTime.getHours() % 12) / 12 * 360}deg)`;
-    minuteHand.style.transform = `rotate(${currentTime.getMinutes() / 60 * 360}deg)`;
-    secondHand.style.transform = `rotate(${currentTime.getSeconds() / 60 * 360}deg)`;
+    // 指針指向的位置要加上小單位的量
+    let second = currentTime.getSeconds();
+    let minute = currentTime.getMinutes() + second / 60;
+    let hour = currentTime.getHours() + minute / 60;
+    hourHand.style.transform = `rotate(${(hour % 12) / 12 * 360}deg)`;
+    minuteHand.style.transform = `rotate(${minute / 60 * 360}deg)`;
+    secondHand.style.transform = `rotate(${second / 60 * 360}deg)`;
 }, 1000);
