@@ -56,6 +56,7 @@ body {
 a, a:hover {
     text-decoration: none;
     color: #000;
+    outline: none;
 }
 
 .header {
@@ -76,7 +77,7 @@ a, a:hover {
     background-color: rgba(255,255,255,0.5);
 }
 
-.nav-tabs {
+.tabs {
     margin-top: 15px;
     display: flex;
     justify-content: center;
@@ -84,7 +85,7 @@ a, a:hover {
     border: 0;
 }
 
-.nav-tabs li a {
+.tabs li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,19 +98,19 @@ a, a:hover {
     margin: 0px 10px;
 }
 
-.nav-tabs li a:hover, .nav-tabs li.active a {
+.tabs li a:hover, .tabs li.active a {
     background-color: #006661;
     color: #99ffcc;
 }
 
-.tab-content .tab-pane .content {
+.content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.tab-content .tab-pane .content .title {
+.content .title {
     width: 100%;
     padding: 10px;
     font-size: 28px;
@@ -120,7 +121,7 @@ a, a:hover {
     align-items: center;
 }
 
-.tab-content .tab-pane .content .links {
+.content .links {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -130,7 +131,7 @@ a, a:hover {
     margin: 20px;
 }
 
-.tab-content .tab-pane .content .links li a {
+.content .links li a {
     display: flex;
     height: 20px;
     width: 100px;
@@ -144,12 +145,12 @@ a, a:hover {
     padding: 12px;
 }
 
-.tab-content .tab-pane .content .links li a:hover {
+.content .links li a:hover {
     background-color: #006661;
     color: #99ffcc;
 }
 
-.tab-content .tab-pane .content .iframe {
+.content .iframe {
     width: 100%;
     scale: 1;
     border: 5px solid #006661;
