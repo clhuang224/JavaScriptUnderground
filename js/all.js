@@ -5,7 +5,7 @@ let data = [
         title: 'F1 九九乘法表',
         articleURL: 'https://clhuang224.github.io/TechBlog/2019/11/03/20191103-hex-jsunderground-01/',
         workURL: './01_MultiplicationChart/index.html',
-        codeURL: 'https://github.com/clhuang224/JavaScriptUnderground/tree/master/01_MultiplicationChart/index.html',
+        codeURL: 'https://github.com/clhuang224/JavaScriptUnderground/tree/master/01_MultiplicationChart/',
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ let data = [
         title: 'F2 時鐘',
         articleURL: 'https://clhuang224.github.io/TechBlog/2019/11/04/20191104-hex-jsunderground-02/',
         workURL: './02_Clock/index.html',
-        codeURL: 'https://github.com/clhuang224/JavaScriptUnderground/tree/master/02_Clock/index.html',
+        codeURL: 'https://github.com/clhuang224/JavaScriptUnderground/tree/master/02_Clock/',
     }
 ];
 
